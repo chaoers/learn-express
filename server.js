@@ -51,6 +51,11 @@ app.post('/write/adduser', (req, res) => {
   res.send('done');
 })
 
+app.get(‘/read/username/:name’, (req, res) => {
+  let name = req.params.name;
+
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
